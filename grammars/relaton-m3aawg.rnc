@@ -1,0 +1,14 @@
+include "biblio-standoc.rnc" {
+
+DocumentType =
+"guidance" | "proposal" | "standard" | "report" | "whitepaper" | "charter" | "policy" |
+        "glossary" | "case-study"
+
+editorialgroup = element editorialgroup {
+  committee+
+}
+
+committee = element committee {
+    attribute type { ( "technical" | "provisional" ) },
+    text
+}
