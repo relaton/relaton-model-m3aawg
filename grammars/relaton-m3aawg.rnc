@@ -8,6 +8,8 @@ editorialgroup = element editorialgroup {
   committee+
 }
 
+}
+
 committee = element committee {
     attribute type { ( "technical" | "provisional" ) },
     text
